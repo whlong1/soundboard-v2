@@ -10,7 +10,6 @@ body {
   margin: 0;
   width: 100%;
   color: black;
-  min-width: 600px;
   text-align: center;
   align-items: center;
   justify-items: center;
@@ -271,11 +270,14 @@ form h4 {
     flex-direction: column;
   }
   .view {
-    width: 85%;
+    width: 100%;
     border: none;
   }
   .footer {
     display: none;
+  }
+  .column-left {
+    padding-top: 0px;
   }
 }
 
