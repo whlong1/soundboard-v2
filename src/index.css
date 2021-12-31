@@ -1,0 +1,400 @@
+#root, html {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  color: black;
+  min-width: 600px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+header {
+  padding: 0;
+  width: 100vw;
+  border-bottom: 1px solid lightgrey;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  list-style: none;   
+  font-style: normal;
+  justify-content: center;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.nav-links a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0px 12px 0px 12px
+}
+
+.redOverlay {
+  color: #F43A33;
+}
+
+h1 {
+  margin: 2vh;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+h2 {
+  color: black;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.search-bar {
+  width: 220px;
+  height: 25px;
+  border: none;
+  outline: none;
+  text-indent: 13px;
+  border-radius: 25px;
+  background-color: #E8F0FE;
+}
+
+.btnSearch {
+  background-color: red;
+}
+
+form h4 {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.view {
+  display: grid;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px 10px 0 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.column-left {
+  padding: 25px;
+  min-height: 382px;
+  border-right: 1px solid #d3d3d3;
+}
+
+.column-right {
+  padding: 20px;
+  padding-left: 15px;
+  min-height: 382px;
+}
+
+.artist-details {
+  display: flex;
+}
+
+.artist-details img {
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+}
+
+.bullet-points {
+  width: 100%;
+  height: 170px;
+  padding: 0px 0px 0px 10px;
+}
+
+.bullet-points h3 {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  margin: 0px 0px 5px 0px; 
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.bullet-points p {
+  margin: 0;
+  line-height: 2;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.bullet-points span {
+  font-size: 13px;
+  font-weight: 200;
+  font-style: normal;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.column-left > p {
+  margin: 0; 
+  line-height: 2;
+  font-size: 12px;
+  font-weight: 300;
+  margin-right: 10px;
+  font-style: normal;
+  text-align: justify;
+  text-justify: inter-word;
+  justify-content: contain;
+  padding: 20px 0px 0px 0px;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.discography {
+  margin-top: 5px;
+}
+
+.discography > p {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0px 0px 15px 5px;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.discography img {
+  width: 32%;
+  border-radius: 3px;
+  margin: 0px 3px 3px 3px;
+  border: 1px solid #d3d3d3;
+}
+
+.container {
+  max-width: 1635px;
+  padding: 28px 7em 0px 7em;
+}
+
+@media only screen and (min-width: 1590px) {
+  .discography img {
+    width: 23.75%;
+  }
+  .container {
+    padding: 28px 15em 0px 15em;
+  }
+}
+
+@media only screen and (max-width: 1840px) {
+  .discography img {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 1590px) {
+  .discography img {
+    width: 31.5%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .artist-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .artist-details img {
+    width: 100%;
+  }
+  .bullet-points {
+    padding: 0;
+    height: auto;
+    margin-top: 5px;
+  }
+  .bullet-points p {
+    display: none;
+  }
+  .bullet-points h3 {
+    margin-top: 8px;
+  }
+  .column-left p {
+    padding-top: 5px;
+    margin: 0;
+  }
+  .discography img {
+    width: 31%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .container {
+    padding: 28px 4em 0px 4em;
+  }
+  .discography img {
+    width: 31%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    padding: 28px 3em 0px 3em;
+  }
+  .column-right {
+    display: none;
+  }
+  .column-left {
+    border: none;
+  }
+  .view {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 28px 1em 0px 1em;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .view {
+    width: 85%;
+    border: none;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+.album-view {
+  color: black;
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0px;
+  font-style: normal;
+  padding: 2px 5px 0px 5px;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.album-view button {
+  padding: 0;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  background: none;
+  font-weight: 450;
+  align-self: start;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.album-view h3 {
+  margin: 0;
+  color: black;
+  font-size: 18px;
+  font-weight: 450;
+  font-style: normal;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.album-view header {
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 20px 0px;
+}
+
+.album-view header p {
+  font-size: 14px;
+  margin: 3px 0px 0px 10px;
+}
+
+.album-view img {
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #d3d3d3;
+}
+
+#summary {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2;
+  font-style: normal;
+  text-align: justify;
+  white-space: pre-line;
+  justify-content: contain;
+  text-justify: inter-word;
+  padding: 0px 2px 0px 0px;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.tracklist {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  font-style: normal;
+  padding: 0px 0px 0px 0px;
+  list-style-position: inside;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.footer {
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: 5vh;
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer p {
+  text-align: left;
+}
+
+#externalLink { 
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 450;
+  margin-bottom: 8px; 
+  font-style: normal;
+  font-family: 'canada-type-gibson', sans-serif;
+}
+
+.socialMedia {
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialMedia a {
+  color: white;
+  font-size: 12px;
+  font-weight: 450;
+  font-style: normal;
+  text-decoration: none;
+  font-family: 'canada-type-gibson', sans-serif;
+}
