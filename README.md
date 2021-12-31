@@ -32,8 +32,8 @@ npm i
 
 ## Ice Box
 
-- [x] Responsive design.
+- [x] Implement responsive design.
 
 - [x] Convert existing project to MERN stack app.
 
-- [ ] Loading animation.
+- [ ] Implement loading animation.
