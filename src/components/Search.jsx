@@ -21,7 +21,6 @@ const Search = ({ setArtist }) => {
       <h4>{!err ? 'Find an Artist' : 'Whoops! Something went wrong.' }</h4>
       <input
         required
-        id="fill"
         type="text"
         placeholder="Search"
         className="search-bar"
