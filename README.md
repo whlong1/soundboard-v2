@@ -36,4 +36,6 @@ npm i
 
 - [x] Convert existing project to MERN stack app.
 
+- [x] Add basic error handling.
+
 - [ ] Implement loading animation.
